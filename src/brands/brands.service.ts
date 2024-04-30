@@ -17,7 +17,7 @@ export class BrandsService {
 
   create(createBrandDto: CreateBrandDto) {
     const { name } = createBrandDto;
-
+    
     const brand: Brand = {
       id: uuid(),
       name: name.toLowerCase(),
